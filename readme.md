@@ -44,4 +44,3 @@ python main.py
 
 - Adjust subreddit selection, number of posts to scrape, and other settings in the scrape_memes() function in Scraper.py.
 - Customize background audio and video selection in main.py.
-- Make sure to replace `your-username` with your GitHub username in the installation section. You can further expand or customize this `README.md` based  on your project's requirements.
