@@ -1,0 +1,8 @@
+praw
+requests
+rich 
+colorama
+moviepy
+cv2
+shutil
+re
