@@ -13,7 +13,7 @@ This project automates the creation of meme videos by scraping memes from select
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/jamonator/Meme-Video-Bot
+   git clone https://github.com/jamonator/Meme-Video-Bot.git
 
 ## Install dependencies:
 
