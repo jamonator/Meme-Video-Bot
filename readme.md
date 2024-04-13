@@ -48,4 +48,10 @@ python main.py
 ## Example
 https://github.com/jamonator/Meme-Video-Bot/assets/83436730/b86c6ad4-fbae-4668-8691-c4a850391c0c
 
-
+### Notes from the creator
+- This is very bad code
+- This much like my other projects is not made with the intention of easy use or works first-time type stuff, it worked on my end so I uploaded it 
+- Sorry if it don't work
+- Good luck getting it working for yourself
+- If you want to please make a better version of my project and show me, that would be cool :)
+- Any of this code can be used I don't care
