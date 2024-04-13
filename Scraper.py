@@ -85,13 +85,14 @@ def scrape_memes():
     print_start("Scraping memes")
     downloaded_count = 0
     meme_paths = []
+    post_title = ""  # Define post_title outside of the if block with a default value
     for post in subreddit.top(time_filter='day', limit=None):  # Iterate over all posts in the subreddit
         if post.id not in used_posts and ('jpg' in post.url or 'png' in post.url):
             print_substep("Checking post")
             posts_found = True
 
             # Updating post title
-            post_title = post.title
+            post_title = post.title  # Assign a value to post_title
             print_substep(f"Downloading: {post.title}")
 
             # Extracting filename from URL
