@@ -44,3 +44,8 @@ python main.py
 
 - Adjust subreddit selection, number of posts to scrape, and other settings in the scrape_memes() function in Scraper.py.
 - Customize background audio and video selection in main.py.
+
+## Example
+https://github.com/jamonator/Meme-Video-Bot/assets/83436730/b86c6ad4-fbae-4668-8691-c4a850391c0c
+
+
