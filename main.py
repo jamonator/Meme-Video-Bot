@@ -5,7 +5,7 @@ import random
 import shutil
 
 # Set how many videos you want made 
-loop_count = 7  # How many videos will be made
+loop_count = 5  # How many videos will be made
 
 print_start("Starting script")
 
