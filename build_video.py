@@ -79,16 +79,17 @@ def add_images_to_video(video_path, top_image_path, bottom_image_path, output_pa
 
     # Calculate the positions to center images horizontally and vertically
     print_substep("Calculating the positions to center images horizontally and vertically")
-    top_position = (center_x - top_image.w // 2, center_y - image_height - padding)
-    bottom_position = (center_x - bottom_image.w // 2, center_y + padding)
+    top_position = (center_x - top_image.w // 2, max(padding, center_y - image_height - padding))
+    bottom_position = (center_x - bottom_image.w // 2, min(frame_height - bottom_image.h - padding, center_y + padding))
 
     # Composite images onto the video
     print_substep("Composite images onto the video")
     video_with_images = CompositeVideoClip([video, top_image.set_position(top_position).set_duration(video.duration), bottom_image.set_position(bottom_position).set_duration(video.duration)])
 
     # Write the final video to the output file
-    print_substep("Writting the final video")
-    video_with_images.write_videofile(output_path, codec="libx264", audio_codec="aac", temp_audiofile='temp-audio.m4a', remove_temp=True, fps=fps)
+    print_substep("Writing the final video")
+    video_with_images.write_videofile(output_path, codec="libx264", audio_codec="aac", temp_audiofile='temp-audio.m4a', remove_temp=True, fps=fps, preset='ultrafast')
+
 
 def main(meme_paths, audio_path, video_path, post_title, output):
     print_step("Building video")
