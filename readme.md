@@ -11,6 +11,8 @@ This project automates the creation of meme videos by scraping memes from select
 ## Installation
 
 1. Clone the repository:
+2. Follow this [tutorial](https://youtu.be/4-ogv3ZU6dg) to get your Reddit API keys
+3. Replace the info on lines 13-16 with your info 
 
    ```bash
    git clone https://github.com/jamonator/Meme-Video-Bot.git
@@ -33,7 +35,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## Dependencies
+## Main dependencies
 
 - Python 3.x
 - praw
