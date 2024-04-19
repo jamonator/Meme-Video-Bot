@@ -11,9 +11,9 @@ def scrape_memes():
     # Reddit API credentials
     print_substep("Loading reddit API credentials")
     reddit = praw.Reddit(
-        client_id='YOUR_CLIENT_ID',
-        client_secret='YOUR_CLIENT_SECRET',
-        user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36'
+        client_id='YOUR_CLIENT_ID', # Put your client ID 
+        client_secret='YOUR_CLIENT_SECRET', # Put your client SECRET 
+        user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36' # You don't need to change this 
     )
 
    # Setting values
